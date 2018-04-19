@@ -13,7 +13,7 @@ The ToDo app uses the following technologies and javascript libraries:
 * passport
 
 ## What is this?
-Simple ToDo App.
+A simple todo app. Based on the tutorial session of Brad Traversy.
 
 ## How can I try it?
 Demo: https://secret-reef-33032.herokuapp.com
