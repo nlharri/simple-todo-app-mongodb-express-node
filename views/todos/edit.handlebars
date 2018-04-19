@@ -1,0 +1,24 @@
+{{#each errors}}
+  <div class="alert alert-danger">{{text}}</div>
+{{else}}
+{{/each}}
+
+<div class="card card-body">
+  <h3>Edit Todo</h3>
+  <form action="/todos/{{todo.id}}?_method=PUT" method="post">
+    <input type="hidden" name="_method" value="PUT">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input class="form-control" name="title" type="text" value="{{todo.title}}" required>
+    </div>
+    <div class="form-group">
+      <label for="duedate">Due Date</label>
+      <input class="form-control" name="duedate" type="text" value="{{todo.dueDate}}">
+    </div>
+    <div class="form-group">
+      <label for="details">Details</label>
+      <textarea class="form-control" name="details" required>{{todo.details}}</textarea>
+    </div>
+    <button type="submit" class="btn btn-dark">Submit</button>
+  </form>
+</div>
