@@ -9,7 +9,6 @@ The ToDo app uses the following technologies and javascript libraries:
 * express-session
 * mongoose
 * bcryptjs
-* mongoos
 * passport
 
 ## What is this?
